@@ -9,3 +9,49 @@
 #blanc {
 	background-color : white;
 }
+
+body {
+	font-family : verdana;
+	margin : 0;
+}
+
+/*///////////////////////////
+/////////////////////////////
+////////// FORMULAIRE ///////
+/////////////////////////////
+///////////////////////////*/
+
+.body {
+	margin : auto;
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	background-color : #ff9900;
+	border : 2px solid black;
+	width : 433px;
+}
+
+input, select, textarea {
+	margin-bottom : 10px;
+}
+
+form {
+	display : flex;
+	flex-direction : column;
+}
+
+select {
+	width : 90px;
+}
+
+#nom, #prenom, #ok, #mail {
+	width : 260px;
+}
+
+form div {
+	display : flex;
+}
+
+form div label {
+	margin-left : 5px;
+}

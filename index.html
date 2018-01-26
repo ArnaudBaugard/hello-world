@@ -3,8 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 	<title>M4105C : Un super module</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/logo.png" />
+
+	<div><a href="../Formulaire 1/index.html">Précédent (formulaire n°1)</a></div>
 </head>
 
 <body>
@@ -16,6 +20,47 @@
 <p id="rouge">Sed euismod maximus diam, non placerat augue ornare nec. Praesent eleifend turpis vel odio finibus ornare. Etiam rhoncus, erat non ornare mollis, tellus nibh sagittis mauris, mattis cursus lacus elit eu nunc. Ut sed sapien id mi hendrerit ullamcorper non a ante. Donec ultricies vehicula tellus, eget suscipit justo ullamcorper in. Suspendisse potenti. In at justo lorem. Aliquam efficitur odio sit amet nulla ornare varius. Nam nisl nulla, commodo quis venenatis non, pellentesque nec eros. Sed bibendum, magna non egestas mollis, sapien ipsum maximus quam, in convallis turpis ex vitae diam. 
 <img src="img/calais.jpg"/>
 </p>
+
+	<div class="body">
+			
+			<form>
+			
+				
+				<label for="nom">Nom</label>
+				<input type="text" placeholder="Baugard" id="nom" />
+				
+				<label for="prenom">Prenom</label>
+				<input type="text" placeholder="Arnaud" id="prenom" />
+
+				<label for="age">Age</label>
+				<input type="number" name="age" placeholder="Age"/>
+
+				<label for="date">Date</label>
+				<input type="date" name="date"/>
+					
+				<label for="phone">Téléphone</label>
+				<input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"/>
+				
+				<label for="mail">Adresse électronique</label>
+				<input type="mail" placeholder="mon@adresse.fr" id="mail" />
+
+				<label for="url">Page Facebook</label>
+				<input type="url" value="http://" name="website">
+			
+				<label for="message">Message</label>
+				<textarea id="message" cols=50 rows=8>
+					
+				</textarea>
+				
+				<div>
+				<input type="checkbox" id="news" /> 
+				<label for="news">Je souhaite recevoir les prochaines newsletters</label>
+				</div>
+				 
+				<input type="submit" value="Envoyer" id="ok"/>
+				
+			</form>
+		</div>
 <!-- Le reste du contenu -->
 
 </body>
