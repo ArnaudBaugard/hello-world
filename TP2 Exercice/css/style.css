@@ -47,13 +47,21 @@ span {
 	display : inline-block;	
 }
 
-#logo img {
+#league{
 	width : 50%;
 }
 #logo {
 	background-color : #1E1912 ;
 	display : inline-block;
 	width : 50%%;
+}
+
+#phone {
+	display : none;
+}
+
+#imgmenu {
+	display : none;
 }
 
 #menu {
@@ -155,7 +163,7 @@ input, textarea, select {
  }
 
 form {
-	width : 50%;
+	width : 100%;
 	display : inline-block;
 }
 
@@ -208,21 +216,67 @@ footer span {
 /*************************************/
 /* MEDIA QUERIES MOBILE */
 /*************************************/
-
+@media(-webkit-min-device-pixel-ratio:2 ){
+} 
 
 @media only screen 											
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-	
-body {
-	background-color : pink;
+
+#menu{
+	display: none;
 }
 
+#league{
+	width: 50%;
+	margin-left : 5%;
+	
+}
 
+#phone {
+	display : block;
+	width : 18%;
+	position : absolute;
+	top : 0; 
+	right : 0;
+}
 
+#imgmenu {
+	display : inline-block;
+	width : 20%;
+}
 
+#feature ul li{ 
+	display: block;
+	width: 100%;
+}
+#feature strong{ 
+	font-size: 3vw;
+}
 
+#feature img {
+	margin-left : 20%;
+}
 
+#map{
+	width: 100%;
+ }
+#map iframe{
+	margin-left: 2.5rem;
+	margin-bottom: 0rem;
+}
+
+#formu{
+    width: 100%;
+    padding-right: 0%;
+    height: 50%;
+ }
+#formu input{
+    width: 90%;
+ }
+#message{ 
+    width: 88%;
+ }
 
 }
 
@@ -230,9 +284,37 @@ body {
 /************************ MEDIA QUERIES TABLETTE *********************/
 /*********************************************************************/
 
-@media only screen    and (min-device-width : 480px)    and (max-device-width : 1400px) { 
+@media only screen and (min-device-width : 650px) and (max-device-width : 1024px){
 
+#header {
+	width : 100%;
+}
 
+#header img{
+    width: 30%;
+    margin-left: 40%;
+}
+#header div{
+    margin-top: 1rem;
+}
+#header input {
+ margin-top: 0.9rem;
+ margin-right: -30rem;
+}
 
+#phone {
+	display : none;
+}
+
+#feature ul li{
+    width: 49%;
+}
+
+#formu input{
+    width: 90%;
+ }
+ #message{ 
+    width: 88%;
+ }
 
 }
